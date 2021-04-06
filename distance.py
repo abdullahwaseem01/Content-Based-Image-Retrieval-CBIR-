@@ -1,4 +1,6 @@
 from scipy.spatial import distance
+import numpy as np
+from gmpy2 import mpz, hamdist, pack
 import pandas as pd
 
 def ham_d(A, B):
@@ -14,8 +16,4 @@ def ham_d(A, B):
   else:
     print('Image array not of equal length')
 
-for i in range(60000):
-  A= pd.read_excel('MNISTBarcodeDataset.xlsx').iloc[i,0]
-  B= pd.read_excel('MNISTBarcodeDataset.xlsx').iloc[i+10,0]
-  ham_d(A,B)
 
