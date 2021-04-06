@@ -7,7 +7,7 @@ def ham_d(A, B):
     for i in range(len(A)):
       if A[i] != B[i]:
         h_dist = h_dist + 1
-    if (h_dist > 30):
+    if (h_dist > 50):
       print(B)
 
     print(h_dist)
